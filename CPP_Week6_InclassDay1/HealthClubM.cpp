@@ -10,8 +10,13 @@ void HealthClubM::displayMenu()
 
 		cout << "1: standard adult membership\n2:child membership\n3:senior membership\n4:Quit program\nEnter Your Choice: ";
 
+		cin >> choice;
 
-		//output formatting 
+		//if the user choice is valid, call function
+		if (choice != 4) {
+			CalcCharges()
+		}
+	//handle exceptions 
 		if (choice == 4) {
 			cout << "exiting program";
 		}else {
@@ -29,7 +34,7 @@ void HealthClubM::displayMenu()
 void HealthClubM::CalcCharges()
 {
 
-	cin >> choice;
+	
 
 	cout << fixed << showpoint << setprecision(2);
 
