@@ -14,7 +14,7 @@ void HealthClubM::displayMenu()
 
 		//if the user choice is valid, call function
 		if (choice != 4) {
-			CalcCharges()
+			CalcCharges();
 		}
 	//handle exceptions 
 		if (choice == 4) {
