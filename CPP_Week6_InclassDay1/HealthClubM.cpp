@@ -11,17 +11,9 @@ void HealthClubM::displayMenu()
 		cout << "1: standard adult membership\n2:child membership\n3:senior membership\n4:Quit program\nEnter Your Choice: ";
 
 		cin >> choice;
-
+		CalcCharges();
 		//if the user choice is valid, call function
-		if (choice != 4) {
-			CalcCharges();
-		}
-	//handle exceptions 
-		if (choice == 4) {
-			cout << "exiting program";
-		}else {
-			cout << "invalid response";
-		}
+		
 
 		
 
@@ -62,14 +54,13 @@ void HealthClubM::CalcCharges()
 
 	}
 	else if (choice == 4) {
-		cout << "exiting program";
+		cout << "exiting program" << endl;
 
 	}
-	else
-	{
-		cout << "invalid response";
-
+	else {
+		cout << "invalid choice" << endl;
 	}
+	
 
 
 
